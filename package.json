@@ -12,12 +12,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/eslint-plugin-next": "^13.2.3",
     "@next/font": "13.1.6",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "next": "^13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-gists": "^1.0.0",
     "react-icons": "^4.7.1",
@@ -28,6 +29,8 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
     "autoprefixer": "^10.4.13",
     "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
