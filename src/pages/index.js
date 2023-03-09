@@ -10,7 +10,7 @@ import { SiLinkedin } from "react-icons/si";
 import { DiAndroid } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { FiGithub } from "react-icons/fi";
-import { CiLinkedin } from "react-icons/Ci";
+import { CiLinkedin } from "react-icons/ci";
 import { DiJsBadge } from "react-icons/di";
 import { FaJava } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
