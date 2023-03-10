@@ -176,7 +176,7 @@ export default function Home() {
                 <div
                   className="pattern-cross pattern-slate-700
                 
-                pattern-bg-white 
+                pattern-bg-slate-200 
                 pattern-size-8 pattern-opacity-100 
                 
                 
@@ -192,22 +192,26 @@ export default function Home() {
                     ></Image>
                   </div>
                   <div className="p-3 bg-slate-700 xs:text-xl ">
-                    <h1 className="text-xl text-white font-ClimateCrisis">
+                    <h1 className="text-xl text-yellow-200 font-ClimateCrisis">
                       About Me
                     </h1>
                     <p className="block mb-1 font-bold font-ShareTekMono text-left text-white">
-                      My name is James O'Reilly and I have recently completed a
-                      Bsc in Computer Science. I am now searching for a position
-                      in Front End developement & Ux Design. In my spare time I
-                      enjoy going to the Gym, Kickboxing, Football.
+                      <p className="text-blue-400">My name is James and i am 31 years old from Dublin. I have recently completed a
+                      Bsc in Computer Science after making the decision to go to University in 2018.</p>
+                      <br/> My passion lies in Front End Development & Ux Design.
+                      Since finishing my degree i have been practicing using technologies such as:<br/>
+                      <p className="text-yellow-200">React.js,Tailwind Css, Next.js, Spring, JavaScript, Typescript, Node, Java, Mongo DB, Firebase.</p>
+                     <br/> <p className=" text-blue-400">I am also currently learning UX design utilising Figma for user interface best practices.</p>
+
                     </p>
                     <br />
-                    <p className="block mb-1 font-ClimateCrisis font-bold text-left text-white">
-                      I have been undertaking projects to keep my skills
-                      sharpend. In 2023 i plan to self learn design using Figma
-                      and best practices for product design Since finishing my
-                      degree I have worked a period in IT Support and then spent
-                      some time In South Africa Travelling.
+                    <p className="block mb-1 font-ShareTekMono font-bold text-left text-white">
+                      <p className="text-yellow-200">Outside of building projects i like to Kickbox, go to the Gym, Play some football amongst other
+                      sports.<br/></p>
+                      I enjoy Photography and Videography also and Music Production as ways of expressing my creative juices.
+                      <br/>
+                      <p className="text-blue-400">I love the outdoors and the early mornings and most early mornings you will find me strolling with my Dog.</p>
+
                     </p>
                   </div>
                 </div>
@@ -258,7 +262,7 @@ export default function Home() {
                   data-theme="dark-theme"
                 ></div>
               </div>
-              <div className=" ml-4  items-center xs:ml-4 xs:mr-4   justify-center">
+              <div className=" ml-4  items-center sm:ml-4 sm:mr-4 sm:mb-0   justify-center">
                 <div
                   className="repo-card"
                   data-repo="JayOReilly/Parralax---React-Spring"
