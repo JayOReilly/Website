@@ -355,7 +355,7 @@ export default function Home() {
               >
                 <div>
                   <label
-                    for="email"
+                    htmlfor="email"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Your email
@@ -371,7 +371,7 @@ export default function Home() {
                 </div>
                 <div>
                   <label
-                    for="name"
+                    htmlfor="name"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Name
@@ -388,7 +388,7 @@ export default function Home() {
 
                 <div className="sm:col-span-2">
                   <label
-                    for="message"
+                    htmlfor="message"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-400"
                   >
                     Your message
