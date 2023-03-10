@@ -82,12 +82,12 @@ export default function Home() {
         <section className=" min-h-screen   ">
           <nav
             className=" xs:justify-between xs:grid-rows-2 
-            sm:justify-between sm:grid-rows-2
+            sm:justify-between sm:grid-cols-1
             py-2 px-6 bg-gradient-to-r from-slate-700 to-black  flex justify-between leading-7 
           border border-black border-t-0 border-l-0 border-r-0 border-b-1 
           "
           >
-            <ul className=" p-3 font-ShareTekMono sm:flex  text-gray-400 text-2xl">
+            <ul className=" p-3 font-ShareTekMono sm:flex sm:text-sm  text-gray-400 text-2xl">
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
@@ -108,13 +108,13 @@ export default function Home() {
               />
             </ul>
 
-            <ul className="flex items-center gap-8 xs:mr-4 md:mr-4 sm:mr-4  xs:gap-2">
+            <ul className="flex items-center gap-8 sm:mr-4 md:mr-4 sm:mr-4 sm:grid-cols-1 sm:gap-2">
               <li className="bg-black rounded-lg ">
                 <div class="max-w-7xl mx-auto">
                   <div class="relative group border rounded-lg">
                     <div class="absolute  -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg cursor-pointer blur opacity-10 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 
-                    <div class="relative   w-23 px-10 py-4 bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
+                    <div class="relative sm:p-2  w-23 px-10 py-4 bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
                       <h1 className="text-white text-2xl group-hover:text-purple-200 transition cursor-pointer duration-300">
                         <a href="https://www.linkedin.com/in/james-jamie-o-reilly-6b9a45207/">
                           <CiLinkedin />
@@ -128,7 +128,7 @@ export default function Home() {
                 <div class="max-w-7xl mx-auto">
                   <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative  w-23 px-10 py-4 border bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
+                    <div class="relative sm:p-2 w-23 px-10 py-4 border bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
                       <h1 className="text-white text-2xl group-hover:text-purple-200 transition cursor-pointer duration-300 ">
                         <a href="https://github.com/JayOReilly">
                           <FiGithub />
@@ -192,10 +192,10 @@ export default function Home() {
                     ></Image>
                   </div>
                   <div className="p-3 bg-slate-700 xs:text-xl ">
-                    <h1 className="text-xl text-white font-ShareTekMono">
+                    <h1 className="text-xl text-white font-ClimateCrisis">
                       About Me
                     </h1>
-                    <p className="block mb-1 font-bold font-ClimateCrisis  text-left text-white">
+                    <p className="block mb-1 font-bold font-ShareTekMono text-left text-white">
                       My name is James O'Reilly and I have recently completed a
                       Bsc in Computer Science. I am now searching for a position
                       in Front End developement & Ux Design. In my spare time I
@@ -229,29 +229,29 @@ export default function Home() {
               Github Display
             </h1>
 
-            <div className="xs:grid-cols-1  grid grid-cols-3 text-xl ">
-              <div className=" ml-2 items-center xs:ml-4 xs:mr-4 xs:mb-0   mb-4 justify-center">
+            <div className="sm:grid-cols-1  grid grid-cols-3 text-xl ">
+              <div className=" ml-2 items-center sm:ml-4 sm:mr-4 sm:mb-0   mb-4 justify-center">
                 <div
                   class="repo-card"
                   data-repo="JayOReilly/Portofolio"
                   data-theme="dark-theme"
                 ></div>
               </div>
-              <div className="ml-4 items-center xs:ml-4 xs:mr-4   justify-center">
+              <div className="ml-4 items-center sm:ml-4 sm:mr-4 sm:mb-0   justify-center">
                 <div
                   className="repo-card"
                   data-repo="JayOReilly/StudentHousingApp"
                   data-theme="dark-theme"
                 ></div>
               </div>
-              <div className="ml-4 mr-4 items-center xs:ml-4 xs:mr-4  justify-center">
+              <div className="ml-4 mr-4 items-center sm:ml-4 sm:mr-4 sm:mb-0 justify-center">
                 <div
                   className="repo-card"
                   data-repo="JayOReilly/JenkinsTest"
                   data-theme="dark-theme"
                 ></div>
               </div>
-              <div className=" ml-2 items-center xs:ml-4 xs:mr-4  justify-center">
+              <div className=" ml-2 items-center sm:ml-4 sm:mr-4 sm:mb-0  justify-center">
                 <div
                   className="repo-card"
                   data-repo="JayOReilly/Space-three.js"
