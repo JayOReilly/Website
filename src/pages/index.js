@@ -223,15 +223,15 @@ export default function Home() {
                     <br />
                     <h5 className="block mb-1 font-ShareTekMono font-bold text-left text-white">
                       <p className="text-yellow-200">
-                        Outside of building projects i like to Kickbox, go to
-                        the Gym, Play some football amongst other sports.
+                        Outside of building projects I like to kickbox, go to
+                        the Gym, play football amongst other sports.
                         <br />
                       </p>
-                      I enjoy Photography and Videography also and Music
-                      Production as ways of expressing my creative juices.
+                      I enjoy Photography, Videography also and Music
+                      Production as ways of expressing my creative side.
                       <br />
                       <p className="text-blue-400">
-                        I love the outdoors and the early mornings and most
+                        I love the outdoors and most
                         early mornings you will find me strolling with my Dog.
                       </p>
                     </h5>
@@ -360,7 +360,7 @@ export default function Home() {
               >
                 <div>
                   <label
-                    htmlfor="email"
+                    htmlFor="email"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Your email
@@ -376,7 +376,7 @@ export default function Home() {
                 </div>
                 <div>
                   <label
-                    htmlfor="name"
+                    htmlFor="name"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Name
@@ -393,7 +393,7 @@ export default function Home() {
 
                 <div className="sm:col-span-2">
                   <label
-                    htmlfor="message"
+                    htmlFor="message"
                     className="block mb-2 text-sm font-medium text-white dark:text-gray-400"
                   >
                     Your message
