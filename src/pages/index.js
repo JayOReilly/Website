@@ -227,7 +227,7 @@ export default function Home() {
                         the Gym, play football amongst other sports.
                         <br />
                       </p>
-                      I enjoy Photography, Videography also and Music
+                      I enjoy Photography, Videography and Music
                       Production as ways of expressing my creative side.
                       <br />
                       <p className="text-blue-400">
