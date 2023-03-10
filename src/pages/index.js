@@ -207,7 +207,7 @@ export default function Home() {
                         making the decision to go to University in 2018.
                       </h5>
                       <br /> My passion lies in Front End Development & Ux
-                      Design. Since finishing my degree i have been practicing
+                      Design. Since finishing my degree I have been practicing
                       using technologies such as:
                       <br />
                       <h5 className="text-yellow-200">
