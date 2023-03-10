@@ -2,6 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import ScrollToTop from "react-scroll-to-top";
 import { useRef } from "react";
+import Script from 'next/script'
 import Image from "next/image";
 import React, { useState } from "react";
 import { Inter } from "@next/font/google";
@@ -27,7 +28,6 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 import JavaScript from "../images/js.png";
 import { GiHighKick } from "react-icons/gi";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -108,13 +108,13 @@ export default function Home() {
               />
             </ul>
 
-            <ul className="flex items-center gap-8 sm:mr-4 md:mr-4 sm:mr-4 sm:grid-cols-1 sm:gap-2">
+            <ul className="flex items-center gap-8  md:mr-4 sm:mr-4 sm:grid-cols-1 sm:gap-2">
               <li className="bg-black rounded-lg ">
-                <div class="max-w-7xl mx-auto">
-                  <div class="relative group border rounded-lg">
-                    <div class="absolute  -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg cursor-pointer blur opacity-10 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div className="max-w-7xl mx-auto">
+                  <div className="relative group border rounded-lg">
+                    <div className="absolute  -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg cursor-pointer blur opacity-10 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 
-                    <div class="relative sm:p-2  w-23 px-10 py-4 bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
+                    <div className="relative sm:p-2  w-23 px-10 py-4 bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
                       <h1 className="text-white text-2xl group-hover:text-purple-200 transition cursor-pointer duration-300">
                         <a href="https://www.linkedin.com/in/james-jamie-o-reilly-6b9a45207/">
                           <CiLinkedin />
@@ -125,10 +125,10 @@ export default function Home() {
                 </div>
               </li>
               <li className="bg-black rounded-lg ">
-                <div class="max-w-7xl mx-auto">
-                  <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative sm:p-2 w-23 px-10 py-4 border bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
+                <div className="max-w-7xl mx-auto">
+                  <div className="relative group">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    <div className="relative sm:p-2 w-23 px-10 py-4 border bg-black ring-1 cursor-pointer ring-gray-900/5 rounded-lg leading-none flex items-top justify-center space-x-6">
                       <h1 className="text-white text-2xl group-hover:text-purple-200 transition cursor-pointer duration-300 ">
                         <a href="https://github.com/JayOReilly">
                           <FiGithub />
@@ -195,24 +195,41 @@ export default function Home() {
                     <h1 className="text-xl text-yellow-200 font-ClimateCrisis">
                       About Me
                     </h1>
-                    <p className="block mb-1 font-bold font-ShareTekMono text-left text-white">
-                      <p className="text-blue-400">My name is James and I am 31 years old from Dublin. I have recently completed a
-                      Bsc in Computer Science after making the decision to go to University in 2018.</p>
-                      <br/> My passion lies in Front End Development & Ux Design.
-                      Since finishing my degree i have been practicing using technologies such as:<br/>
-                      <p className="text-yellow-200">React.js,Tailwind Css, Next.js, Spring, JavaScript, Typescript, Node, Java, Mongo DB, Firebase.</p>
-                     <br/> <p className=" text-blue-400">I am also currently learning UX design utilising Figma for user interface best practices.</p>
-
-                    </p>
+                    <h5 className="block mb-1 font-bold font-ShareTekMono text-left text-white">
+                      <p className="text-blue-400">
+                        My name is James and I am 31 years old from Dublin. I
+                        have recently completed a Bsc in Computer Science after
+                        making the decision to go to University in 2018.
+                      </p>
+                      <br /> My passion lies in Front End Development & Ux
+                      Design. Since finishing my degree i have been practicing
+                      using technologies such as:
+                      <br />
+                      <p className="text-yellow-200">
+                        React.js,Tailwind Css, Next.js, Spring, JavaScript,
+                        Typescript, Node, Java, Mongo DB, Firebase.
+                      </p>
+                      <br />
+                      <p className=" text-blue-400">
+                        I am also currently learning UX design utilising Figma
+                        for user interface best practices.
+                      </p>
+                    </h5>
                     <br />
-                    <p className="block mb-1 font-ShareTekMono font-bold text-left text-white">
-                      <p className="text-yellow-200">Outside of building projects i like to Kickbox, go to the Gym, Play some football amongst other
-                      sports.<br/></p>
-                      I enjoy Photography and Videography also and Music Production as ways of expressing my creative juices.
-                      <br/>
-                      <p className="text-blue-400">I love the outdoors and the early mornings and most early mornings you will find me strolling with my Dog.</p>
-
-                    </p>
+                    <h5 className="block mb-1 font-ShareTekMono font-bold text-left text-white">
+                      <p className="text-yellow-200">
+                        Outside of building projects i like to Kickbox, go to
+                        the Gym, Play some football amongst other sports.
+                        <br />
+                      </p>
+                      I enjoy Photography and Videography also and Music
+                      Production as ways of expressing my creative juices.
+                      <br />
+                      <p className="text-blue-400">
+                        I love the outdoors and the early mornings and most
+                        early mornings you will find me strolling with my Dog.
+                      </p>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -236,7 +253,7 @@ export default function Home() {
             <div className="sm:grid-cols-1  grid grid-cols-3 text-xl ">
               <div className=" ml-2 items-center sm:ml-4 sm:mr-4 sm:mb-0   mb-4 justify-center">
                 <div
-                  class="repo-card"
+                  className="repo-card"
                   data-repo="JayOReilly/Portofolio"
                   data-theme="dark-theme"
                 ></div>
@@ -326,20 +343,20 @@ export default function Home() {
           
           "
           >
-            <div class="py-8 lg:py-16 px-4 mx-auto w-screen-lg">
-              <h2 class="mb-4 text-4xl tracking-tight font-ShareTekMono text-center text-white dark:text-white">
+            <div className="py-8 lg:py-16 px-4 mx-auto w-screen-lg">
+              <h2 className="mb-4 text-4xl tracking-tight font-ShareTekMono text-center text-white dark:text-white">
                 Contact Me
               </h2>
-              <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"></p>
+              <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"></p>
               <form
                 method="POST"
                 action="https://getform.io/f/16584e33-abc8-4ace-8700-58a2d3bd66c6"
-                class="space-y-8"
+                className="space-y-8"
               >
                 <div>
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-white dark:text-gray-300"
+                    className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Your email
                   </label>
@@ -347,7 +364,7 @@ export default function Home() {
                     type="email"
                     name="email"
                     id="email"
-                    class="shadow-sm bg-gray-50 border text-black border-gray-300  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="shadow-sm bg-gray-50 border text-black border-gray-300  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="name@email.com"
                     required
                   />
@@ -355,7 +372,7 @@ export default function Home() {
                 <div>
                   <label
                     for="name"
-                    class="block mb-2 text-sm font-medium text-white dark:text-gray-300"
+                    className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
                   >
                     Name
                   </label>
@@ -363,16 +380,16 @@ export default function Home() {
                     type="text"
                     name="name"
                     id="name"
-                    class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="Name..."
                     required
                   />
                 </div>
 
-                <div class="sm:col-span-2">
+                <div className="sm:col-span-2">
                   <label
                     for="message"
-                    class="block mb-2 text-sm font-medium text-white dark:text-gray-400"
+                    className="block mb-2 text-sm font-medium text-white dark:text-gray-400"
                   >
                     Your message
                   </label>
@@ -382,14 +399,14 @@ export default function Home() {
                     name="Message"
                     id="message"
                     rows="6"
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Leave a message..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  class="py-3 px-5 border-2 border-white hover:text-gray-900 hover:bg-white text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="py-3 px-5 border-2 border-white hover:text-gray-900 hover:bg-white text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   Send message
                 </button>
@@ -398,7 +415,7 @@ export default function Home() {
           </div>
 
           <footer
-            class="w-full h-20 bg-gradient-to-r from-slate-700 to-black border-t-2 border-white
+            className="w-full h-20 bg-gradient-to-r from-slate-700 to-black border-t-2 border-white
             abosolute left-0 bottom-0 
             flex-rows-3 text-center   
             text-white 
