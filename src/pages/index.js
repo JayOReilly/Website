@@ -196,7 +196,7 @@ export default function Home() {
                       About Me
                     </h1>
                     <p className="block mb-1 font-bold font-ShareTekMono text-left text-white">
-                      <p className="text-blue-400">My name is James and i am 31 years old from Dublin. I have recently completed a
+                      <p className="text-blue-400">My name is James and I am 31 years old from Dublin. I have recently completed a
                       Bsc in Computer Science after making the decision to go to University in 2018.</p>
                       <br/> My passion lies in Front End Development & Ux Design.
                       Since finishing my degree i have been practicing using technologies such as:<br/>
