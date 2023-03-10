@@ -187,7 +187,7 @@ export default function Home() {
                       alt="ME"
                       src={pic}
                       className="h-56 w-56 rounded-md shadow-2xl mt-6 transform
-                    -translate-y-10 border-4 border-gray-500
+                    -translate-y-7 border-4 border-gray-500
                     hover:-translate-y-4 transition duration-700"
                     ></Image>
                   </div>
