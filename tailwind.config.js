@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
 
+    screens: {
+      'xs':'411px',
+      'sm':'640px',
+      'md':'768px',
+      'lg':'1024px',
+      'xl':'1280px',
+      '2xl':'1536px',
+    },
+
     zIndex: {
       '0': 0,
      '10': 10,
