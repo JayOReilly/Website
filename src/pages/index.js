@@ -81,7 +81,9 @@ export default function Home() {
       <main className="bg-white px-0 ">
         <section className=" min-h-screen   ">
           <nav
-            className=" xs:justify-between xs:grid-rows-2  py-2 px-6 bg-gradient-to-r from-slate-700 to-black  flex justify-between leading-7 
+            className=" xs:justify-between xs:grid-rows-2 
+            sm:justify-between sm:grid-rows-2
+            py-2 px-6 bg-gradient-to-r from-slate-700 to-black  flex justify-between leading-7 
           border border-black border-t-0 border-l-0 border-r-0 border-b-1 
           "
           >
@@ -106,7 +108,7 @@ export default function Home() {
               />
             </ul>
 
-            <ul className="flex items-center gap-8 xs:mr-4 md:mr-4  xs:gap-2">
+            <ul className="flex items-center gap-8 xs:mr-4 md:mr-4 sm:mr-4  xs:gap-2">
               <li className="bg-black rounded-lg ">
                 <div class="max-w-7xl mx-auto">
                   <div class="relative group border rounded-lg">
@@ -178,7 +180,7 @@ export default function Home() {
                 pattern-size-8 pattern-opacity-100 
                 
                 
-                h-full w-2/4 rounded-md drop-shadow-2xl outline-solid border-4 xs:w-full   border-gray-500"
+                h-full w-2/4 rounded-md drop-shadow-2xl outline-solid border-4 xs:w-full sm:w-full   border-gray-500"
                 >
                   <div className="flex justify-center items-center leading-none">
                     <Image
