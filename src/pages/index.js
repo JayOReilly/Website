@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import dynamic from "next/dynamic";
 import ScrollToTop from "react-scroll-to-top";
 import { useRef } from "react";
@@ -28,10 +29,14 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 import JavaScript from "../images/js.png";
 import { GiHighKick } from "react-icons/gi";
+import { ReactDOM } from "react";
+import { hydrate } from "react-dom";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+
   // to avoid ssr error
 
   const slides = [
@@ -195,26 +200,26 @@ export default function Home() {
                     <h1 className="text-xl text-yellow-200 font-ClimateCrisis">
                       About Me
                     </h1>
-                    <h5 className="block mb-1 font-bold font-ShareTekMono text-left text-white">
-                      <p className="text-blue-400">
+                    <div className="block mb-1 font-bold font-ShareTekMono text-left text-white">
+                      <h5 className="text-blue-400">
                         My name is James and I am 31 years old from Dublin. I
                         have recently completed a Bsc in Computer Science after
                         making the decision to go to University in 2018.
-                      </p>
+                      </h5>
                       <br /> My passion lies in Front End Development & Ux
                       Design. Since finishing my degree i have been practicing
                       using technologies such as:
                       <br />
-                      <p className="text-yellow-200">
+                      <h5 className="text-yellow-200">
                         React.js,Tailwind Css, Next.js, Spring, JavaScript,
                         Typescript, Node, Java, Mongo DB, Firebase.
-                      </p>
+                      </h5>
                       <br />
                       <p className=" text-blue-400">
                         I am also currently learning UX design utilising Figma
                         for user interface best practices.
                       </p>
-                    </h5>
+                    </div>
                     <br />
                     <h5 className="block mb-1 font-ShareTekMono font-bold text-left text-white">
                       <p className="text-yellow-200">
